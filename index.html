@@ -14,76 +14,112 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter&family=K2D:wght@300&family=Poppins:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter&family=K2D:wght@300&family=Poppins:wght@300;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
-   <style>
-    .textInter{
-        font-family: 'Inter', sans-serif;
+<style>
 
-    }
-    .textPoppins{
-      font-family: 'Poppins', sans-serif;
-    }
-    .sec1{
-        text-shadow: -1px 1px 0 #000, 
-        1px 1px 0 #000, 
-       1px -1px 0 #000, 
-      -1px -1px 0 #000; 
-       color: #80DED9;
-    }
-    .sec7{
-        border-radius: 20px 20px 0px 0px;
-    }
-    .sec7_buynow{
-        border-radius: 0px 0px 20px 20px;
-    }
-    .sec8{
-      text-shadow: -1px 1px 0 #000, 
-      1px 1px 0 #000, 
-     1px -1px 0 #000, 
-    -1px -1px 0 #000; 
-     color: white;
-  }
- /* crousel */
- .carousel-container {
-    width: 90%;
-    overflow: hidden;
-    position: relative;
-    
-  }
+  /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
-  .carousel {
-    display: flex;
-    transition: transform 0.5s;
-    
-  }
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 
-  .associationSectionCarousel{
-    display: flex;
-    transition: transform 0.5s;
-  }
 
-  .carousel-item {
-    flex: 0 0 100%;
-    width: 100%;
-    height: 280px;
-    /* Set your desired height */
-    background-color: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* crousel */
 
-   </style>
+/* The dots/bullets/indicators */
+.dot {
+  height: 18px;
+  width: 18px;
+  margin: 5px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #80DED9;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
 <body>
+  <nav class="flex justify-between px-12 bg-[#80DED9] pt-6">
+    <div class=""> 
+    
+      <img src="images/logo.svg" alt="">
+    </div> 
+      <div class="flex">
+
+        <div class="mt-4 mx-2 dropdown">
+          <span class="pl-4 pr-2 py-2 text-md font-semibold bg-[#77CEC8] rounded-full flex">Property 
+            <img src="images/nav_arrow_down.svg" alt="" class="ml-2">
+          </span>
+          <div class=" dropdown-content">
+           <p>npa2pa</p>
+          </div>
+        </div>
+       
+     <div class="mt-4 mx-2">
+      <button class="px-4 py-2 text-md font-semibold bg-[#77CEC8] rounded-full">News</button>
+     </div>
+     <div class="mt-4 mx-2">
+      <button class="px-4 py-2 text-md font-semibold bg-[#77CEC8] rounded-full">Case Studies </button>
+     </div>
+     <div class="mt-4 mx-2">
+    <a href="/blog.html"> <button class="px-4 py-2 text-md font-semibold bg-[#77CEC8] rounded-full">Blogs</button> </a> 
+     </div>
+     <div class="mt-4 mx-2">
+    <a href="/team_member.html">  <button class="px-4 py-2 text-md font-semibold bg-[#77CEC8] rounded-full">Expert Team</button> </a>
+     </div>
+     <div class="mt-4 mx-2">
+      <button class="px-4 py-2 text-md font-semibold bg-[#77CEC8] rounded-full">Tools</button>
+     </div>
+     <div class="mt-4 mx-2">
+      <button class="px-4 py-2 text-md font-semibold bg-[#3C3C3C] text-white rounded-full">Join Us</button>
+     </div> 
+     <div class="mt-4 mx-2">
+      <button class="px-4 py-2 text-md font-semibold bg-white text-black rounded-full flex">Signup/Login &nbsp;<h2>→</h2> 
+        
+      </button>
+     </div> 
+   
+    </div>
+ 
+  </nav>
     <!--section 1-->
-    <section class="bg-[#80DED9] h-auto">
-        <div class="lg:flex mx-12">
+    <section class="bg-[#80DED9] h-auto ">
+        <div class="lg:flex mx-12 pt-24">
         <div class="">
-           <div class="text-8xl font-extrabold"> <p>You Put The</p> <p class="sec1"> Best Choice 
+           <div class="text-6xl font-extrabold pt-12"> <p>You Put The Best Choice 
             To Trust Us</p>
            </div>
-           <p class="text-2xl mt-8">
+           <p class="text-xl mt-4">
             We handle your legalities and documentation, 
             so that you worry less and focus more on your dream business.
            </p>
@@ -98,39 +134,39 @@
      <!---section 1 part 1-->
    <section class="bg-[#80DED9] h-64">
     <div class="flex mx-12">
-        <button class="w-72 mt-12 bg-white text-black text-xl font-bold px-4 py-4 rounded-xl flex textInter">Exchange Property
-            <img src="images/home_sec1_arrow.svg" alt="" class="mx-4 pt-[0.3rem] float-right">
-        </button>
-        <button class="w-72 mt-12 mx-12 bg-white text-black text-xl font-bold px-4 py-4 rounded-xl flex textInter">NP2APA
-            <img src="images/home_sec1_arrow.svg" alt="" class=" pt-[0.3rem] float-right ml-24">
-        </button>
+        <a href="exchange.html"><button class="w-72 mt-12 bg-white text-black text-xl font-bold pl-4 py-4 rounded-xl flex textInter">Exchange Property
+            <img src="images/home_sec1_arrow.svg" alt="" class="ml-12 pt-[0.3rem] float-right">
+        </button></a> 
+      <a href="/NPA2.html"> <button class="w-72 mt-12 mx-12 bg-white text-black text-xl font-bold px-4 py-4 rounded-xl flex textInter">NP2APA
+            <img src="images/home_sec1_arrow.svg" alt="" class=" pt-[0.3rem] float-right ml-36">
+        </button> </a> 
        </div>
        <div class="flex mx-12">
-        <button class="w-72 mt-4 bg-white text-black text-xl font-bold px-4 py-4 rounded-xl flex textInter">Disputed Property
-            <img src="images/home_sec1_arrow.svg" alt="" class="mx-4 pt-[0.3rem] float-right">
-        </button>
-        <button class="w-72 mt-4 mx-12 bg-white text-black text-xl font-bold px-4 py-4 rounded-xl flex textInter">Trouble Sites
-            <img src="images/home_sec1_arrow.svg" alt="" class=" pt-[0.3rem] float-right mx-auto">
-        </button>
+     <a href="property.html">   <button class="w-72 mt-4 bg-white text-black text-xl font-bold px-4 py-4 rounded-xl flex textInter">Disputed Property
+            <img src="images/home_sec1_arrow.svg" alt="" class="ml-12 pt-[0.3rem] float-right">
+        </button> </a>
+      <a href="/trouble.html"> <button class="w-72 mt-4 mx-12 bg-white text-black text-xl font-bold px-4 py-4 rounded-xl flex textInter">Trouble Sites
+            <img src="images/home_sec1_arrow.svg" alt="" class=" pt-[0.3rem] float-right ml-24">
+        </button> </a> 
         <div class="float-right ml-72 ">
-        <button class="mt-4  bg-[#3C3C3C] text-white text-xl font-bold px-4 py-4 rounded-full flex textInter">
+      <a href="/how2file.html">  <button class="mt-4  bg-[#3C3C3C] text-white text-xl font-bold px-4 py-4 rounded-full flex textInter">
             <img src="images/home_sec1_wheel.svg" alt="" class=" h-8 mx-2">
             e-Consultation   
-        </button>
+        </button> </a>
        </div>
 
        </div>
     </section>
-    <!--Section 2-->
+    <!--Section 2 join now-->
     <section class="bg-[#F6F5EF] h-28">
         <div class="text-2xl py-8 text-center textInter">
-            <p>Become a Partner/Associate with us? <b class="underline">Join Now</b></p>        
+         <a href="/login.html">  <p>Become a Partner/Associate with us? <b class="underline">Join Now</b></p>        </a> 
         </div>
     </section>
-    <!--Section 3-->
+    <!--Section 3 popular-->
     <section class="mt-8">
-        <p class="text-7xl text-center font-extrabold textPoppins">Popular</p>
-        <p class="text-5xl text-center textInter">Services</p>
+        <p class="text-5xl text-center font-extrabold textPoppins">Popular</p>
+        <p class="text-3xl text-center textInter">Services</p>
 
         <div class="flex mx-12 mt-16 textInter">
             <div class="w-1/4 h-auto bg-white shadow-2xl rounded-2xl mr-4 pb-4">
@@ -176,26 +212,65 @@
         </div>
     </section>
 
-    <!--Section 5-->
-    <section class="bg-[#F6F5EF] mt-12">
-        <p class="text-7xl text-center font-extrabold textPoppins pt-12">How it</p>
-        <p class="text-5xl text-center textInter">Works</p>
+    <!--Section 5 how it works-->
+    <section class="bg-[#F6F5EF] mt-12 h-full pb-24">
+        <p class="text-5xl text-center font-extrabold textPoppins pt-12">How it</p>
+        <p class="text-3xl text-center textInter">Works</p>
+        <!---carousel-->
+        <div class="slideshow-container flex mt-12">
 
-        <div class="flex">
-            <div class="w-1/2"><img src="images/home_sec5_HowItWoks.svg" alt="" class="h-96 px-12"></div>
-            <div class="w-1/2 pt-24 px-24">
-                <p class="text-4xl">Register</p>
-                <p class="text-lg text-[#8A8A8A] mt-8">Lorem ipsum dolor sit amet, consec 
-                    adipiscing elit. Fusce finibus enim Lorem 
-                    ipsum dolor sit amet, consec adipiscing elit. 
-                    Fusce finibus enim </p>
+          <div class="mt-32">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+
+
+          <div class="mySlides fade">
+            <div class="flex">
+              <div class="w-1/2"><img src="images/home_sec5_HowItWoks.svg" alt="" class="h-96 px-12"></div>
+              <div class="w-1/2 pt-16 pl-32 pr-12">
+                  <p class="text-4xl">Register</p>
+                  <p class="text-lg text-[#8A8A8A] mt-8">Simply fill the above form to get started.
+
+                  </p>
+              </div>
+          </div>
+  
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="flex">
+              <div class="w-1/2"><img src="images/home_sec5_HowItWoks.svg" alt="" class="h-96 px-12"></div>
+              <div class="w-1/2 pt-24 pl-32 pr-12">
+                  <p class="text-4xl">Make Payment</p>
+                  <p class="text-lg text-[#8A8A8A] mt-8">Lorem ipsum dolor sit amet, consec 
+                      adipiscing elit. Fusce finibus enim Lorem 
+                      ipsum dolor sit amet, consec adipiscing elit. 
+                      Fusce finibus enim </p>
+              </div>
             </div>
-        </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="flex">
+              <div class="w-1/2"><img src="images/home_sec5_HowItWoks.svg" alt="" class="h-96 px-12"></div>
+              <div class="w-1/2 pt-24 pl-32 pr-12">
+                  <p class="text-4xl"> Our Expert Will Start Process</p>
+                  <p class="text-lg text-[#8A8A8A] mt-8">Lorem ipsum dolor sit amet, consec 
+                      adipiscing elit. Fusce finibus enim Lorem 
+                      ipsum dolor sit amet, consec adipiscing elit. 
+                      Fusce finibus enim </p>
+              </div>
+            </div>
+          </div>
+
+         
+          </div>
     </section>
-    <!--Section 6-->
+    <!--Section 6 choose us-->
     <section>
-        <p class="text-7xl text-center font-extrabold textPoppins pt-12">Why</p>
-        <p class="text-5xl text-center textInter">Choose Us</p>
+        <p class="text-5xl text-center font-extrabold textPoppins pt-12">Why</p>
+        <p class="text-3xl text-center textInter">Choose Us</p>
          
         <div class="flex mx-8 mt-8 textInter">
             <div class="w-1/3 h-auto bg-[#80DED9] shadow-2xl rounded-2xl mx-4 pb-4">
@@ -245,10 +320,10 @@
         </div>
     </section>
      
-    <!--Section 7-->
+    <!--Section 7 payy-->
     <section>
-        <p class="text-7xl text-center font-extrabold textPoppins mt-24">Pay as you</p>
-        <p class="text-5xl text-center textInter">Grow</p>
+        <p class="text-5xl text-center font-extrabold textPoppins mt-24">Pay as you</p>
+        <p class="text-3xl text-center textInter">Grow</p>
          
         <div class="flex mx-8 mt-8 textInter">
             <div class="w-1/3 h-[35rem] bg-white shadow-2xl rounded-2xl mx-4 ">
@@ -299,7 +374,7 @@
    <section class="mt-16">
     <div id="showCard16Crousel" class="carousel-container mx-12">
        <div class="flex">
-          <p class=" text-5xl font-extrabold sec8">Client</p> <p class="text-black text-5xl font-extrabold">&nbsp; Reviews</p>
+          <p class=" text-5xl font-extrabold">Client</p> <p class="text-black text-5xl font-extrabold">&nbsp; Reviews</p>
           <div class="float-right mt-2 lg:pl-[48rem]">
             <button class="prev-button hover:bg-[#80DED9] hover:rounded-full" onclick="changeSlide(-1)"><img src="images/left-arrow.svg" class=" h-7 w-7 " alt="" /></button>
              <button class="next-button hover:bg-[#80DED9] hover:rounded-full" onclick="changeSlide(1)"><img src="images/right_arrow.svg" class=" h-7 w-7" alt="" /> </button>
@@ -344,7 +419,7 @@
     
     <!--Section 9 -->
     <section class="mx-12">
-        <p class="text-7xl font-extrabold textPoppins pt-12">Partners</p>
+        <p class="text-5xl font-extrabold textPoppins pt-12">Partners</p>
         <p class="text-[#444444] mt-4 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolorem expedita perferendis?</p>
 
         <div class="flex mt-8">
@@ -361,7 +436,7 @@
 
        <!--Section 10 -->
        <section class="mx-12 mt-12">
-        <p class="text-7xl font-extrabold textPoppins pt-12">Clients</p>
+        <p class="text-5xl font-extrabold textPoppins pt-12">Clients</p>
         <p class="text-[#444444] mt-4 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolorem expedita perferendis?</p>
 
         <div class="flex mt-8">
@@ -378,8 +453,8 @@
      
       <!--Section 11  Contact Us-->
       <section class="bg-[#F6F5EF] mt-12">
-        <p class="text-7xl text-center font-extrabold textPoppins pt-12">Contact</p>
-        <p class="text-5xl text-center textInter">Information</p>
+        <p class="text-5xl text-center font-extrabold textPoppins pt-12">Contact</p>
+        <p class="text-3xl text-center textInter">Information</p>
 
         <div class="flex">
           <div class="w-full mt-12 md:text-left lg:w-1/2 lg:mx-4 md:mt-0 sm:mt-0">
@@ -453,6 +528,79 @@
         </div>
     </section>
     
+   <!---footer-->
+<footer class="bg-[#2E2E2E] text-white footer-home lg:block md:block " id="footer-blur" >
+  <div class="flex justify-between h-auto">
+    <div class="flex flex-col w-[35%] ">
+     
+      <ul class="text-[#b8b8b8] text-sm space-y-2 pl-16 pt-0 pr-16 leading-[200%]">
+        <img src="images/logo.svg" class="pt-12 h-36">
+        <li><a >NPA2PA supports busy Entrepreneurs 
+          to handle their messy Startup Legalities and 
+          documentation, so that they worry less and 
+          focus more on their dream business.
+          </a></li>
+         
+      </ul>
+         <div class="text-[#b8b8b8]  space-y-2 pl-16 pt-12 pr-16 leading-8xl">
+          <div class="flex pt-2">
+            <img src="images/footer_logo_fb.svg" alt="logo" class="h-6  px-2">
+            <img src="images/footer_logo_ig.svg" alt="logo" class="h-6  px-2">
+            <img src="images/footer_logo_linkdln.svg" alt="logo" class="h-6  px-2">
+          </div>
+           <p class="pt-2 text-[#707070]">About Company</p>
+           <ul class="text-[#80DED9] my-4 space-y-2">
+             <li><a href="/careers">About Us</a></li>
+             <li><a href="/contact">Privacy-Policy</a></li>
+             <li><a href="/services">Terms & Condiion</a></li>
+           </ul>
+            </div>
+    </div>
+
+    <div class="flex flex-col w-[30%] p-16">
+      <p class="text-[#707070]">Property</p>
+      <ul class="text-[#80DED9] my-4 space-y-2">
+        <li><a href="/">Exchange Land </a></li>
+        <li><a href="/about">Disputed Property </a></li>
+        <li><a href="/blogs">NPA2PA</a></li>
+        <li><a href="/careers">Lorem ipsum</a></li>
+        <li><a href="/contact">Lorem ipsum</a></li>
+        <li><a href="/services">Lorem ipsum</a></li>
+      </ul>
+      <p class="pt-12 text-[#707070]">Case Studies</p>
+      <ul class="text-[#80DED9] my-4 space-y-2">
+        <li><a href="/careers">Lorem ipsum</a></li>
+        <li><a href="/contact">Lorem ipsum</a></li>
+        <li><a href="/services">Lorem ipsum</a></li>
+      </ul>
+    </div>
+
+   
+    <div class="flex flex-col w-[30%] p-16 ">
+      <p class="text-[#707070]">News</p>
+      <ul class="text-[#80DED9] my-4 space-y-2">
+        <li><a href="/">Lorem ipsum</a></li>
+        <li><a href="/about">Lorem ipsum </a></li>
+        <li><a href="/blogs">Lorem ipsum</a></li>
+        <li><a href="/careers">Lorem ipsum</a></li>
+        <li><a href="/contact">Lorem ipsum</a></li>
+        <li><a href="/services">Lorem ipsum</a></li>
+      </ul>
+      <p class="text-[#707070] pt-12">Download our App</p>
+        <div class="flex">
+          <img src="images/footer_dwld ios.svg" alt="" class="w-36">
+          <img src="images/footer_dwldApple.svg" alt="" class="w-36">
+        </div>
+    </div>
+  </div>
+
+  <div class="p-5 flex  items-center bg-[#343434]">
+   
+    <p class="text-md text-center mx-auto text-[#828282]">2016-2022 NPA2PA Pvt Ltd | All Rights Reserved.</p>
+    
+  </div>
+</footer>
+ 
 
       
 </body>
@@ -475,6 +623,28 @@
 
   // Initial slide
   changeSlide(0);
+
+
+  //how it works section
+  let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
 
 </script>
 </html>
